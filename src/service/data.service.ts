@@ -5,6 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/map';
 import { Security } from '../model/security';
+const securityEndpoint = '../assets/security.json';
 
 @Injectable()
 export class DataService {
@@ -21,7 +22,7 @@ export class DataService {
   searchedSecurityObservable = this.searchedSecurity.asObservable();
 
   getSecurityJSON(): Observable<Security[]> {
-    return this.http.get<Security[]>('../assets/security.json')
+    return this.http.get<Security[]>(securityEndpoint)
       .map((res) => {
         this.securityData.next(res);
         return res;
