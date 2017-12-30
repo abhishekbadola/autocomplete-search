@@ -2,6 +2,7 @@
 
 You can watch the Live demo of this Angular based **autocomplete-search** App [**Here**](https://abhishekbadola.github.io/autocomplete-search) 
 > Data for autocomplete is retrieved through "security.json"
+> To utilize promises in angular **RxJs** is used, which works on Observable and subscriber pattern to perform promise based functionality
 > Angular routing is used for state change from selecting autocomplete results to the details view
 > For UI material design and components were used.
 > Built on Angular 5 Latest.
