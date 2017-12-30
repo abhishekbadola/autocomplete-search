@@ -5,7 +5,6 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/map';
 import { Security } from '../model/security';
-const securityEndpoint = 'https://github.com/abhishekbadola/autocomplete-search/blob/gh-pages/assets/security.json';
 
 @Injectable()
 export class DataService {
@@ -21,8 +20,10 @@ export class DataService {
   private searchedSecurity = new BehaviorSubject<Security>(new Security());
   searchedSecurityObservable = this.searchedSecurity.asObservable();
 
+  private securityEndpoint = '../assets/security.json';
+
   getSecurityJSON(): Observable<Security[]> {
-    return this.http.get<Security[]>(securityEndpoint)
+    return this.http.get<Security[]>(this.securityEndpoint)
       .map((res) => {
         this.securityData.next(res);
         return res;
