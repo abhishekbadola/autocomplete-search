@@ -1,11 +1,9 @@
-# TV Maze Search App (Angular 5) 
+# Autocomplete Search (Angular 5) 
 
-You can watch the Live demo of this Angular based search App [**Here**](https://abhishekbadola.github.io/searchApp) 
-> [**TVMaze API**](http://www.tvmaze.com/api) is used to get the live records
-> Search can be made based on shows or people.
-> Angular animations is also applied on the Recent search queries. you can click on them also to remove recent search queries from view
+You can watch the Live demo of this Angular based **autocomplete-search** App [**Here**](https://abhishekbadola.github.io/autocomplete-search) 
+> Data for autocomplete is retrieved through "security.json"
+> Angular routing is used for state change from selecting autocomplete results to the details view
 > For UI material design and components were used.
-> The records will be shown in form of cards.
 > Built on Angular 5 Latest.
 
 
