@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/filter';
 import 'rxjs/add/operator/map';
 import { Security } from '../model/security';
-const securityEndpoint = '../assets/security.json';
+const securityEndpoint = 'https://github.com/abhishekbadola/autocomplete-search/blob/gh-pages/assets/security.json';
 
 @Injectable()
 export class DataService {
