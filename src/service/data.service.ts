@@ -20,7 +20,7 @@ export class DataService {
   private searchedSecurity = new BehaviorSubject<Security>(new Security());
   searchedSecurityObservable = this.searchedSecurity.asObservable();
 
-  private securityEndpoint = '../assets/security.json';
+  private securityEndpoint = './assets/security.json';
 
   getSecurityJSON(): Observable<Security[]> {
     return this.http.get<Security[]>(this.securityEndpoint)
