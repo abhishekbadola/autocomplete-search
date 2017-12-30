@@ -1,6 +1,6 @@
 # Autocomplete Search (Angular 5) 
 
-You can watch the Live demo of this Angular based **autocomplete-search** App [**Here**](https://autocomplete-ng5.netlify.com/) 
+You can watch the Live demo of this Angular based **autocomplete-search** App [**Here**](https://abhishekbadola.github.io/autocomplete-search) 
 > Data for autocomplete is retrieved through "security.json"
 > Angular routing is used for state change from selecting autocomplete results to the details view
 > For UI material design and components were used.
