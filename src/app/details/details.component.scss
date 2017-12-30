@@ -1,0 +1,41 @@
+mat-card {
+  width: 20%;
+  margin-bottom: 15px;
+}
+
+.mat-card-image {
+  height: 300px
+}
+
+mat-card-content.mat-card-content {
+  padding-bottom: 25px;
+}
+
+.mat-card-actions {
+  position: absolute;
+  bottom: -10px;
+  right: 30px;
+}
+
+
+.mat-list .mat-list-item,
+.mat-nav-list .mat-list-item,
+.mat-selection-list .mat-list-item {
+  color: #fff;
+}
+
+.detailed-view .mat-list-item-content {
+  margin: 0 -16px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  mat-card {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  mat-card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,14 @@
+<p *ngIf="!hasData">
+  <br>
+  <br>
+  <br> Nothing to Show here !!!
+</p>
+
+<div class="detailed-view" *ngIf="hasData">
+  <mat-list role="list">
+    <mat-list-item role="listitem"> <strong>Cusip: </strong> &nbsp;&nbsp;&nbsp;&nbsp;{{searchData.Cusip}} </mat-list-item>
+    <mat-list-item role="listitem"> <strong>Description:</strong> &nbsp;&nbsp;&nbsp;&nbsp;{{searchData.Description}} </mat-list-item>
+    <mat-list-item role="listitem"> <strong>SecType:</strong> &nbsp;&nbsp;&nbsp;&nbsp;{{searchData.SecType}} </mat-list-item>
+    <mat-list-item role="listitem"> <strong>Ticker:</strong> &nbsp;&nbsp;&nbsp;&nbsp;{{searchData.Ticker}} </mat-list-item>
+  </mat-list>
+</div>
